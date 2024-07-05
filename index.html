@@ -62,7 +62,7 @@
 				<h3>Grow Your Skills</h3>
 				<button type="button" class="btn btn-outline-light btn-lg">VIEW
 				DEMO</button>
-				<button type="button" class="btn btn-primary btn-lg">Get Started</button>
+				<a href="#form"><button type="button" class="btn btn-primary btn-lg">Get Started</button></a>
 			</div>
 		</div>
 		<div class="carousel-item">
@@ -132,10 +132,9 @@
 	<hr class="my-4">
 </div>
 <!-- A button to open the popup form -->
-<button class="open-button" onclick="openForm()">Open Form</button>
 
 <!-- The form -->
-<div class="form-popup" id="myForm">
+<div id="form" class="form-popup" id="myForm">
     <form action="/action_page.php" class="form-container">
         <h1>Login</h1>
         <label for="email"><b>Email</b></label>
@@ -314,9 +313,7 @@
 <script>
 AOS.init();
 </script>
-<script>function openForm() {
-    document.getElementById("myForm").style.display = "block";
-}
+<script>
 
 function closeForm() {
     document.getElementById("myForm").style.display = "none";
