@@ -18,7 +18,7 @@
 <!-- Navigation -->
 <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
 	<div class="container-fluid">
-		<a class="navbar-brand" href="#"><img src="img/logo.jpg"></a>
+		<a class="navbar-brand" href="#"><img src="img/logo.png"></a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
 			<span class="navbar-toggler-icon"></span>
 		</button>
@@ -60,9 +60,9 @@
 			<div class="carousel-caption">
 				<h1 class="display-2">goSkills</h1>
 				<h3>Grow Your Skills</h3>
-				<button type="button" class="btn btn-outline-light btn-lg">VIEW
-				DEMO</button>
-				<a href="#form"><button type="button" class="btn btn-primary btn-lg">Get Started</button></a>
+				
+				<button type="button" class="btn btn-primary btn-lg" onclick="openForm()">Get Started</button>
+
 			</div>
 		</div>
 		<div class="carousel-item">
@@ -84,7 +84,7 @@
 			<p class="lead">This Site Will Help You In Building Your Career more Strong </p>
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
-			<a href="#"><button type="button" class="btn btn-outline-secondary
+			<a href="#form"><button type="button" class="btn btn-outline-secondary
 			btn-lg">Enrolled</button></a>
 		</div>
 	</div>
@@ -115,36 +115,36 @@
 	<div class="row text-center padding">
 		<div class="col-xs-12 col-sm-6 col-md-4">
 			<i class="fas fa-code"></i>
-			<h3>Career</h3>
-			<p> 1.Career path how to start </p>
+			<a href="https://www.bing.com/ck/a?!&&p=fe540974e42a3b53JmltdHM9MTcyMDEzNzYwMCZpZ3VpZD0xOTFjNmU1ZC1kYjI0LTY0MWUtMDIyNi03ZDkyZGEwYTY1ZjYmaW5zaWQ9NTIzMw&ptn=3&ver=2&hsh=3&fclid=191c6e5d-db24-641e-0226-7d92da0a65f6&psq=geeks+for+geeks+roadmap&u=a1aHR0cHM6Ly93d3cuZ2Vla3Nmb3JnZWVrcy5vcmcvY29tcGxldGUtcm9hZG1hcC1mb3ItZmlyc3QteWVhci1jb2xsZWdlLXN0dWRlbnRzLWItdGVjaC1iY2EtYi1zYy8&ntb=1">			<h3>Career</h3>
+<p> 1.Career path how to start </p></a>
 		</div>
 		<div class="col-xs-12 col-sm-6 col-md-4">
 			<i class="fas fa-bold"></i>
-			<h3>Build</h3>
-			<p>2.here all Skills Notes and video </p>
+			
+			<a href="https://www.bing.com/aclk?ld=e8qWpvh_ogz69h5u7Iuq_7KDVUCUzICqMm-1FkGCONdaDpY0N8elmKRFRzMjCJHc4YZ17wEQLsBQqcf8b-QU4lZaaKIWQcaxUG5AA1fWbADnLAfOEq0d9Bf2ZSao8KtwF4RZXQSzaNXlzCBtsi7G2Ha_nUPk80i-Ect_6_oaaXWybdab-kpn-5OYc6Ad_UXpFGHJ2bsw&u=aHR0cHMlM2ElMmYlMmZ3d3cuY291cnNlcmEub3JnJTJmJTNmbXNjbGtpZCUzZDMyODk1MDNlZjkxNzE0ODdhMjNlMzZiNjI2NGE4ZTc4&rlid=3289503ef9171487a23e36b6264a8e78&ntb=1"><h3>Build</h3>
+				<p>2.here all Skills Notes and video </p></a>
 		</div>
 		<div class="col-xs-12 col-md-4">
 			<i class="fab fa-css3"></i>
-			<h3>job or internship </h3>
-			<p>3.After Your skills update try to Apply for job /internship .</p>
+			
+			<a href="https://www.bing.com/ck/a?!&&p=60babe24ae5bc23eJmltdHM9MTcyMDEzNzYwMCZpZ3VpZD0xOTFjNmU1ZC1kYjI0LTY0MWUtMDIyNi03ZDkyZGEwYTY1ZjYmaW5zaWQ9NTQ3NA&ptn=3&ver=2&hsh=3&fclid=191c6e5d-db24-641e-0226-7d92da0a65f6&psq=internshala&u=a1aHR0cHM6Ly9pbnRlcm5zaGFsYS5jb20v&ntb=1"><h3>job or internship </h3>
+				<p>3.After Your skills update try to Apply for job /internship .</p></a>
 		</div>
 	</div>
 	<hr class="my-4">
 </div>
-<!-- A button to open the popup form -->
-
-<!-- The form -->
-<div id="form" class="form-popup" id="myForm">
-    <form action="/action_page.php" class="form-container">
-        <h1>Login</h1>
-        <label for="email"><b>Email</b></label>
-        <input type="text" placeholder="Enter Email" name="email" required>
-        <label for="psw"><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="psw" required>
-        <button type="submit" class="btn">Login</button>
-        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-    </form>
+<div class="form-popup" id="myForm">
+	<form action="/action_page.php" class="form-container">
+		<h1>Login</h1>
+		<label for="email"><b>Email</b></label>
+		<input type="text" placeholder="Enter Email" name="email" required>
+		<label for="psw"><b>Password</b></label>
+		<input type="password" placeholder="Enter Password" name="psw" required>
+		<button type="submit" class="btn">Login</button>
+		<button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+	</form>
 </div>
+
 
 <!--- Two Column Section -->
 <div class="container-fluid padding"data-aos="fade-up"
@@ -234,7 +234,7 @@
 		data-aos-duration="1000">
 	<div class="row padding">
 		<div class="col-md-12 col-lg-6">
-			<h2>Our Philosophy</h2>
+			<h2>Our service</h2>
 			<p>We know that greatness in a disruptive era requires bold
 				ambition, curious talent and a culture that believes we're
 			    smarter together.</p>
@@ -303,7 +303,7 @@
 			</div>
 			<div class="col-12">
 				<hr class="light-100">
-				<h5>&copy; Website Learning </h5>
+				<h5>&copy; Grow with Intelligence</h5>
 			</div>
 		</div>
 	</div>
@@ -314,10 +314,13 @@
 AOS.init();
 </script>
 <script>
+	function openForm() {
+		document.getElementById("myForm").style.display = "block";
+	}
 
-function closeForm() {
-    document.getElementById("myForm").style.display = "none";
-}
+	function closeForm() {
+		document.getElementById("myForm").style.display = "none";
+	}
 </script>
 </body>
 </html>
